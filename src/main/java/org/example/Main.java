@@ -4,16 +4,20 @@ package org.example;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Ctrl+. with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+//        System.out.printf("Hello and welcome!");
+        System.out.println("");
+        System.out.println("Hello and welcome!");
+        System.out.println("In order to run a main method in a class file " +
+                "on terminal follow the steps below");
+        System.out.println("(1).First type " +
+                "javac <filename_with_.java_extension>");
+        System.out.println("(2).Second type " +
+                "java <filename_without_extension>");
+        System.out.println("(Alternate).type " +
+                "java <filename_with_.java_extension>");
+        System.out.println("Note that this process will create " +
+                "an additional .class byte code file " +
+                "and it can be large comparing to the source code file");
 
-        // Press Ctrl+F5 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press F5 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing F9.
-            System.out.println("i = " + i);
-        }
     }
 }
