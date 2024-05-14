@@ -1,18 +1,15 @@
-package a_8_OOP.b_7_Constructors;
+package a_8_OOP.b_8_DefaultParamConstructors;
 
 public class C_1_Demo {
     public static void main(String[] args) throws ClassNotFoundException {
 
         Human obj=new Human();
-        Human obj1=new Human();
-
-        // When you create the object in the heap memory, it will create a blank object.
+//		Human obj1=new Human(18, "Navin");
         System.out.println(obj.getName()+" : "+obj.getAge());
-        // will output null : 0.
+//		System.out.println(obj1.getName()+" : "+obj1.getAge());
 
-        obj.SetAge(30);
-        obj.setName("Reddy");
-        // if these 2 lines are commented the constructor's values would be displayed.
+//		obj.SetAge(30);
+//		obj.setName("Reddy");
 
 
         //System.out.println(obj.getName()+" : "+obj.getAge());

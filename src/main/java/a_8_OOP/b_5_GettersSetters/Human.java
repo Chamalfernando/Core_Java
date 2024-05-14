@@ -1,35 +1,51 @@
-package a_8_OOP.b_4_Encapsulation;
+package a_8_OOP.b_5_GettersSetters;
 
 public class Human {
 
     //int age;
-    //String name;
-
     //private int age=11;
-    //private String name="Navin";
-
     private int age;
-    private String name; // instance variable
+    //String name;
+    //private String name="Navin";
+    private String name;
 
-    // getter
     public int getAge()
     {
         return age;
     }
-    public void SetAge(int a)
+    public void SetAge(int age)
     {
-        age/* instance variable */ = a;// local variable
+        this.age=age;
     }
-    // No need to pass the obj.
+
+//	public void SetAge(int a)
+//	{
+//		age=a;
+//	}
+
+//	public int abc()
+//	{
+//		return age;
+//	}
+//	public void xyz(int a)
+//	{
+//		age=a;
+//	}
+
 
     public String getName()
     {
         return name;
     }
-    public void setName(String n)
+    public void setName(String name)
     {
-        name=n;
+        this.name=name;
     }
+
+//	public void setName(String n)
+//	{
+//		name=n;
+//	}
 
     // right click -> source action -> Generate getters and setters.
 

@@ -1,23 +1,26 @@
 package a_8_OOP.b_4_Encapsulation;
 
-public class c_2_Human {
+public class Human {
 
     //int age;
-    //private int age=11;
-    private int age;
     //String name;
-    //private String name="Navin";
-    private String name;
 
+    //private int age=11;
+    //private String name="Navin";
+
+    private int age;
+    private String name; // instance variable
+
+    // getter
     public int getAge()
     {
         return age;
     }
     public void SetAge(int a)
     {
-        age=a;
+        age/* instance variable */ = a;// local variable
     }
-
+    // No need to pass the obj.
 
     public String getName()
     {
@@ -27,5 +30,7 @@ public class c_2_Human {
     {
         name=n;
     }
+
+    // right click -> source action -> Generate getters and setters.
 
 }

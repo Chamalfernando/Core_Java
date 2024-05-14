@@ -1,26 +1,28 @@
-package a_8_OOP.b_6_ThisKeyWord;
+package a_8_OOP.b_7_Constructors;
 
 public class Human {
 
-    private int age; // instance variable
+    private int age;
     private String name;
 
-    public int getAge()
+    // Constructor.
+    // This is useful for assign pre defined or agreed values to the properties.
+    public Human()
     {
+        age=12;
+        name="John";
+        System.out.println("in constructor");
+    }
+    // every time you create a new object it will call the constructor.
+    // when it comes to database connections this will be very helpful.
+
+    public int getAge(){
         return age;
     }
-    public void SetAge(int age, Human obj)
+    public void SetAge(int age)
     {
-        //Human obj1=new Human();
-        Human obj1=obj;
-        obj1.age=age; // age is a local variable.
-        //this.age=age;
+        this.age=age;
     }
-
-//	public void SetAge(int a)
-//	{
-//		age=a;
-//	}
 
 
     public String getName()
@@ -31,10 +33,5 @@ public class Human {
     {
         this.name=name;
     }
-
-//	public void setName(String n)
-//	{
-//		name=n;
-//	}
 
 }

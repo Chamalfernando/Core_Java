@@ -1,6 +1,6 @@
 package a_11_Arrays;
 
-public class First {
+public class B_1_ArrayCreation {
     public static void main(String[] args) {
         //      int nums[]= {3,7,2,4};
         //		nums[1]=6;

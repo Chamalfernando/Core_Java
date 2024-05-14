@@ -1,20 +1,40 @@
-package a_8_OOP.b_7_Constructors;
+package a_8_OOP.b_8_DefaultParamConstructors;
 
 public class Human {
 
     private int age;
     private String name;
 
-    // Constructor.
-    // This is useful for assign pre defined or agreed values to the properties.
+    // default constructor
     public Human()
     {
         age=12;
         name="John";
-        System.out.println("in constructor");
     }
-    // every time you create a new object it will call the constructor.
-    // when it comes to database connections this will be very helpful.
+    public Human(String name) {
+        this.age=23;
+        this.name=name;
+    }
+
+    // parameterized constructor.
+    public Human(int age, String name)
+    {
+        this.age=age;
+        this.name=name;
+    }
+
+
+//	public Human()    //default constructor
+//	{
+//		age=12;
+//		name="John";
+//		//System.out.println("in constructor");
+//	}
+//	public Human(int a, String n)  //Parameterized constructor
+//	{
+//		age=a;
+//		name=n;
+//	}
 
     public int getAge(){
         return age;
@@ -23,8 +43,6 @@ public class Human {
     {
         this.age=age;
     }
-
-
     public String getName()
     {
         return name;

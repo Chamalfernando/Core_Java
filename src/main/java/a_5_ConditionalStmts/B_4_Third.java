@@ -1,6 +1,6 @@
 package a_5_ConditionalStmts;
 
-public class B_4_Fourth {
+public class B_4_Third {
     public static void main(String[] args) {
         int x = 2;
         int result = 0;
